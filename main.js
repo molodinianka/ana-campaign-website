@@ -1,4 +1,4 @@
-// Initiative Data Store - All 12 Campaigns
+// Initiative Data Store - All 12 Campaign Features
 const initiatives = [
   {
     title: "Cafeteria Food Diversity & Coffee Access",
