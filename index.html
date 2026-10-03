@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vote #7 Ana Molodini | School Presidency Campaign</title>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-number">#7</span>
+        <span class="logo-text">ANA MOLODINI</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#pillars"><i class="fas fa-bullseye"></i> Key Pillars</a></li>
+        <li><a href="#gallery"><i class="fas fa-images"></i> Initiatives</a></li>
+        <li><a href="#approval"><i class="fas fa-check-double"></i> Feasibility</a></li>
+      </ul>
+      <a href="#gallery" class="cta-nav-btn"><i class="fas fa-vote-yea"></i> Explore Campaign</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="hero" class="hero-section">
+    <div class="hero-content">
+      
+      <!-- Left Column: Campaign Slogan & Buttons -->
+      <div class="hero-text-col">
+        <div class="badge-tag"><i class="fas fa-star"></i> OFFICIAL CANDIDATE FOR SCHOOL PRESIDENCY</div>
+        <h1>One Mind To Plan.<br><span class="gold-text">One Team To Stand.</span></h1>
+        <p class="hero-slogan">Unifying IB, Georgian, and American school sectors through real, actionable leadership.</p>
+        <div class="hero-buttons">
+          <a href="#gallery" class="btn btn-primary"><i class="fas fa-search"></i> View Approved Initiatives</a>
+          <a href="#approval" class="btn btn-secondary"><i class="fas fa-handshake"></i> Principal Endorsement</a>
+        </div>
+      </div>
+
+      <!-- Right Column: Candidate Profile Picture -->
+      <div class="hero-profile-col">
+        <div class="hero-profile-container">
+          <img src="./images/profile.jpg" alt="Ana Molodini - Campaign Candidate" class="hero-profile-img">
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- About & Pillars Section -->
+  <section id="pillars" class="section">
+    <div class="section-title">
+      <h2>Campaign Core Pillars</h2>
+      <p class="section-subtitle">Real commitments designed for all students</p>
+      <div class="gold-line"></div>
+    </div>
+
+    <div class="pillars-grid">
+      <div class="pillar-card">
+        <i class="fas fa-smile-beam pillar-icon"></i>
+        <h3>Student Life & Well-Being</h3>
+        <p>Spirit weeks, comfortable uniform trousers, coffee access, cafeteria upgrades, and unforgettable Prom celebrations.</p>
+      </div>
+      <div class="pillar-card">
+        <i class="fas fa-bus pillar-icon"></i>
+        <h3>Excursions & Field Trips</h3>
+        <p>Planning administration-approved educational outings and recreational trips across all school sectors.</p>
+      </div>
+      <div class="pillar-card">
+        <i class="fas fa-trophy pillar-icon"></i>
+        <h3>Sports Championships</h3>
+        <p>Inter-school competitions, student vs. teacher showdowns, and high-energy leagues in Football, Volleyball, and Basketball.</p>
+      </div>
+      <div class="pillar-card">
+        <i class="fas fa-book-reader pillar-icon"></i>
+        <h3>Human Library & Academics</h3>
+        <p>NGO volunteering opportunities with Caritas, intellectual trivia leagues, and cross-sector collaboration.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visual Gallery Section -->
+  <section id="gallery" class="section dark-bg">
+    <div class="section-title light-text">
+      <h2>Campaign Initiatives & Gallery</h2>
+      <p class="section-subtitle">Click any card to view photos, details, and campaign promises</p>
+      <div class="gold-line"></div>
+    </div>
+
+    <!-- Category Filter Tabs -->
+    <div class="sector-tabs">
+      <button class="tab-btn active" onclick="filterGallery(event, 'all')"><i class="fas fa-th-large"></i> All</button>
+      <button class="tab-btn" onclick="filterGallery(event, 'student-life')"><i class="fas fa-laugh-beam"></i> Student Life & Spirit</button>
+      <button class="tab-btn" onclick="filterGallery(event, 'excursions')"><i class="fas fa-route"></i> Excursions</button>
+      <button class="tab-btn" onclick="filterGallery(event, 'cafeteria')"><i class="fas fa-coffee"></i> Cafeteria & Perks</button>
+      <button class="tab-btn" onclick="filterGallery(event, 'sports')"><i class="fas fa-running"></i> Sports</button>
+      <button class="tab-btn" onclick="filterGallery(event, 'academics')"><i class="fas fa-graduation-cap"></i> Academics & Library</button>
+      <button class="tab-btn" onclick="filterGallery(event, 'events')"><i class="fas fa-award"></i> Endorsed & Events</button>
+    </div>
+
+    <div class="gallery-grid">
+      <!-- 1. Cafeteria & Coffee Rights -->
+      <div class="gallery-item category-cafeteria" onclick="openActivityModal(0)">
+        <img src="images/coffee.jpg" alt="Cafeteria Food & Coffee Access">
+        <div class="insta-badge"><i class="fas fa-images"></i> 2 Photos</div>
+        <div class="gallery-caption">
+          <strong>Cafeteria Upgrade & Coffee Rights</strong>
+          <span>More Food Diversity & Coffee Access</span>
+        </div>
+      </div>
+
+      <!-- 2. Human Library -->
+      <div class="gallery-item category-academics" onclick="openActivityModal(1)">
+        <img src="images/human-library-1.jpg" alt="Human Library & Cultural Exchange">
+        <div class="insta-badge"><i class="fas fa-images"></i> 5 Photos</div>
+        <div class="gallery-caption">
+          <strong>Human Library & Cultural Exchange</strong>
+          <span>Volunteering & Caritas Partnership</span>
+        </div>
+      </div>
+
+      <!-- 3. Football League -->
+      <div class="gallery-item category-sports" onclick="openActivityModal(2)">
+        <img src="images/football-1.jpg" alt="Football Championship League">
+        <div class="insta-badge"><i class="fas fa-images"></i> 3 Photos</div>
+        <div class="gallery-caption">
+          <strong>Football Championship League</strong>
+          <span>Inter-School Matches & Teacher Showdowns</span>
+        </div>
+      </div>
+
+      <!-- 4. Volleyball & Basketball -->
+      <div class="gallery-item category-sports" onclick="openActivityModal(3)">
+        <img src="images/volleyball-1.jpg" alt="Volleyball & Indoor Sports">
+        <div class="insta-badge"><i class="fas fa-images"></i> 3 Photos</div>
+        <div class="gallery-caption">
+          <strong>Volleyball & Basketball Tournaments</strong>
+          <span>Cross-Sector & Teacher Showdowns</span>
+        </div>
+      </div>
+
+      <!-- 5. Chess Championship -->
+      <div class="gallery-item category-sports" onclick="openActivityModal(4)">
+        <img src="images/chess-championship.jpg" alt="Chess Championship">
+        <div class="gallery-caption">
+          <strong>Chess Championship</strong>
+          <span>Strategic Mind Tournament</span>
+        </div>
+      </div>
+
+      <!-- 6. "What? Where? When?" -->
+      <div class="gallery-item category-academics" onclick="openActivityModal(5)">
+        <img src="images/what-where-when.jpg" alt="What? Where? When? Competition">
+        <div class="gallery-caption">
+          <strong>"What? Where? When?"</strong>
+          <span>Intellectual Team Quiz</span>
+        </div>
+      </div>
+
+      <!-- 7. Student Voice -->
+      <div class="gallery-item category-student-life" onclick="openActivityModal(6)">
+        <img src="images/collaboration.jpg" alt="Student Voice & Unity">
+        <div class="gallery-caption">
+          <strong>Your Voice Matters</strong>
+          <span>Student Collaboration & Community</span>
+        </div>
+      </div>
+
+      <!-- 8. Principal Approval -->
+      <div class="gallery-item category-events" onclick="openActivityModal(7)">
+        <img src="images/principal-approval.jpg" alt="Principal Approval & Handshake">
+        <div class="gallery-caption">
+          <strong>Officially Approved Plan</strong>
+          <span>Principal Endorsement</span>
+        </div>
+      </div>
+
+      <!-- 9. School Excursions -->
+      <div class="gallery-item category-excursions" onclick="openActivityModal(8)">
+        <img src="images/traveling.jpg" alt="Approved Excursions & Field Trips">
+        <div class="insta-badge"><i class="fas fa-images"></i> 2 Photos</div>
+        <div class="gallery-caption">
+          <strong>School Excursions & Trips</strong>
+          <span>Administration-Approved Travel</span>
+        </div>
+      </div>
+
+      <!-- 10. Spirit Weeks & Pyjama Day -->
+      <div class="gallery-item category-student-life" onclick="openActivityModal(9)">
+        <img src="images/spiritweek.jpg" alt="Spirit Weeks & Theme Days">
+        <div class="insta-badge"><i class="fas fa-images"></i> 2 Photos</div>
+        <div class="gallery-caption">
+          <strong>Spirit Weeks & Theme Days</strong>
+          <span>De-Stress & Fun Activities</span>
+        </div>
+      </div>
+
+      <!-- 11. Uniform Trousers Upgrade -->
+      <div class="gallery-item category-student-life" onclick="openActivityModal(10)">
+        <img src="images/forms.jpg" alt="Comfortable Uniform Trousers">
+        <div class="insta-badge"><i class="fas fa-images"></i> 2 Photos</div>
+        <div class="gallery-caption">
+          <strong>Uniform Trousers Upgrade</strong>
+          <span>Comfortable Dress Code Adjustments</span>
+        </div>
+      </div>
+
+      <!-- 12. Prom & Pre-Prom Celebrations -->
+      <div class="gallery-item category-events" onclick="openActivityModal(11)">
+        <img src="images/prom.jpg" alt="End of Year Prom and Pre-Prom Celebrations">
+        <div class="insta-badge"><i class="fas fa-images"></i> 2 Photos</div>
+        <div class="gallery-caption">
+          <strong>Prom & Pre-Prom Night</strong>
+          <span>Unforgettable Memories to End the Year</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Approved & Action-Ready Section -->
+  <section id="approval" class="section approval-section">
+    <div class="container">
+      <div class="approval-grid">
+        <div class="approval-image-container">
+          <img src="images/principal-approval.jpg" alt="Ana Molodini and Principal Handshake" class="approval-img">
+          <div class="approval-badge">
+            <i class="fas fa-check-circle"></i> Officially Approved
+          </div>
+        </div>
+
+        <div class="approval-content">
+          <span class="approval-tag"><i class="fas fa-shield-alt"></i> FEASIBILITY & LEADERSHIP</span>
+          <h2>Why Is All Of This Possible?</h2>
+          <div class="gold-line-left"></div>
+          
+          <p class="approval-text">
+            Every initiative on this platform—from cafeteria coffee access and excursions to Spirit Weeks and Prom—is an <strong>actionable, pre-approved plan</strong> ready to be executed.
+          </p>
+
+          <ul class="approval-list">
+            <li>
+              <i class="fas fa-handshake"></i>
+              <div>
+                <strong>Principal & Administration Endorsement</strong>
+                <span>All proposed initiatives have been reviewed and aligned with school leadership.</span>
+              </div>
+            </li>
+            <li>
+              <i class="fas fa-hands-helping"></i>
+              <div>
+                <strong>Partnered Outreach</strong>
+                <span>Direct connections with prominent organizations like Caritas for real volunteer credits.</span>
+              </div>
+            </li>
+            <li>
+              <i class="fas fa-users-cog"></i>
+              <div>
+                <strong>One Team, Real Results</strong>
+                <span>Organized execution to turn every campaign goal into reality.</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="approval-quote">
+            <p>"Promises mean nothing without approval. We brought you real, executable plans from Day 1."</p>
+            <span class="quote-author">— Candidate #7, Ana Molodini</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p><strong>Vote #7 Ana Molodini for School Presidency</strong></p>
+    <p class="footer-slogan">"One mind to plan. One team to stand."</p>
+    <p class="copyright">&copy; 2026 Ana Molodini Campaign. All rights reserved.</p>
+  </footer>
+
+  <!-- Interactive Modal Slideshow Popup -->
+  <div id="activityModal" class="modal-overlay">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeActivityModal()">&times;</button>
+      
+      <div class="modal-body">
+        <div class="modal-image-col">
+          <img id="modalImage" src="" alt="Activity Image">
+          <div id="modalCategory" class="modal-category-badge">Category</div>
+          
+          <!-- Image Carousel Controls for Multi-Photo Posts -->
+          <div id="imageCarouselControls" class="image-carousel-controls">
+            <button class="carousel-arrow" onclick="prevCarouselImage(event)"><i class="fas fa-chevron-left"></i></button>
+            <span id="carouselCounter" class="carousel-indicator">1 / 2</span>
+            <button class="carousel-arrow" onclick="nextCarouselImage(event)"><i class="fas fa-chevron-right"></i></button>
+          </div>
+        </div>
+
+        <div class="modal-details-col">
+          <h3 id="modalTitle">Activity Title</h3>
+          <p id="modalDescription" class="modal-description">Activity Description</p>
+
+          <div class="modal-promise-box">
+            <div class="promise-header">
+              <i class="fas fa-hand-holding-heart"></i>
+              <span>MY CAMPAIGN PROMISE:</span>
+            </div>
+            <p id="modalPromise" class="promise-text">I promise to...</p>
+          </div>
+
+          <div class="modal-counter">
+            <span id="modalCurrentIndex">1</span> of <span id="modalTotalCount">12</span> Initiatives
+          </div>
+
+          <div class="modal-nav-buttons">
+            <button class="nav-btn" onclick="prevActivity()"><i class="fas fa-chevron-left"></i> Previous Project</button>
+            <button class="nav-btn" onclick="nextActivity()">Next Project <i class="fas fa-chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
